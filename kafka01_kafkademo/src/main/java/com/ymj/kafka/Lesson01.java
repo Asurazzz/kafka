@@ -34,7 +34,8 @@ public class Lesson01 {
         Properties p = new Properties();
         p.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG,
                 "192.168.195.132:9092,192.168.195.133:9092,192.168.195.134:9092");
-        // kafka 持久化数据的MQ  数据 -> byte[]  不会对数据进行干预，双方要约定编码
+        // kafka 持久化数据的MQ  数据 -> byte[]
+        // 不会对数据进行干预，双方要约定编码
         // kafka是一个app：使用零拷贝  sendfile 系统调用实现快速数据消费
         p.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
         p.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, StringSerializer.class.getName());
