@@ -35,7 +35,7 @@ public class MyProducer1 {
         );
 
         // 发送消息，同步等待消息的确认
-        producer.send(record).get(3000, TimeUnit.MILLISECONDS);
+        producer.send(record).get(3_000, TimeUnit.MILLISECONDS);
 
         // 关闭生产者
         producer.close();
