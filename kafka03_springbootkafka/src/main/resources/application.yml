@@ -7,7 +7,7 @@ spring:
     name: springboot-kafka-02
   kafka:
     # 用于建立初始连接的broker地址
-    bootstrap-servers: 192.168.195.131:9092
+    bootstrap-servers: 192.168.1.240:9092
     # producer用到的key和value的序列化类
     producer:
       key-serializer: org.apache.kafka.common.serialization.IntegerSerializer
