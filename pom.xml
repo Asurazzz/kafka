@@ -9,6 +9,7 @@
         <module>kakfa05_customSerializer</module>
         <module>kafka06-customPartitioner</module>
         <module>kafka07-customInterceptor</module>
+        <module>kafka08_customDeserializer</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

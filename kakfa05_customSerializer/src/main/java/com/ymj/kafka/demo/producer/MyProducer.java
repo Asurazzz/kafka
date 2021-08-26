@@ -22,7 +22,7 @@ import java.util.Map;
 public class MyProducer {
     public static void main(String[] args) {
         Map<String, Object> configs = new HashMap<>();
-        configs.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "192.168.1.240:9092");
+        configs.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "192.168.195.131:9092");
         configs.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
         configs.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, UserSerializer.class);
 
