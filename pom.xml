@@ -5,6 +5,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>kafka04-kafka-properties</module>
+        <module>kafka04_kafkaadminclient</module>
         <module>kakfa05_customSerializer</module>
         <module>kafka06-customPartitioner</module>
         <module>kafka07-customInterceptor</module>
