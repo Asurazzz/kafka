@@ -11,6 +11,7 @@
         <module>kafka07-customInterceptor</module>
         <module>kafka08_customDeserializer</module>
         <module>kafka09_consumerOffsetMgr</module>
+        <module>kafka10_consumerInterceptors</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
