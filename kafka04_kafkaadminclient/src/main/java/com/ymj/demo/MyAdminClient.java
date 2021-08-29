@@ -24,7 +24,7 @@ public class MyAdminClient {
     @Before
     public void before() {
         Map<String, Object> configs = new HashMap<>();
-        configs.put("bootstrap.servers", "192.168.1.240:9092");
+        configs.put("bootstrap.servers", "192.168.1.131:9092");
         configs.put("client.id", "admin_001");
 
         client = (KafkaAdminClient) KafkaAdminClient.create(configs);
