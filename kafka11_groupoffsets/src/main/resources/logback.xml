@@ -1,0 +1,6 @@
+<configuration scan="true" scanPeriod="10 seconds">
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+
+    <!-- 屏蔽kafka debug -->
+    <logger name="org.apache.kafka.clients" level="ERROR"/>
+</configuration>

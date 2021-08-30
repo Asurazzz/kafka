@@ -25,7 +25,7 @@ public class KafkaConsumerAuto {
 
     public KafkaConsumerAuto() {
         Properties props = new Properties();
-        props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "node1:9092");
+        props.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "192.168.1.241:9092");
         props.put(ConsumerConfig.GROUP_ID_CONFIG, "group");
         // 打开自动提交
         props.put(ConsumerConfig.ENABLE_AUTO_COMMIT_CONFIG, "true");
