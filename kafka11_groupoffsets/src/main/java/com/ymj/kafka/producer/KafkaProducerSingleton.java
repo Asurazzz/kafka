@@ -51,7 +51,7 @@ public class KafkaProducerSingleton {
         this.retry = retry;
         if (null == kafkaProducer) {
             Properties properties = new Properties();
-            properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "192.168.195.131:9092");
+            properties.setProperty(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "192.168.1.241:9092");
             properties.setProperty(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringSerializer");
             properties.setProperty(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, "org.apache.kafka.common.serialization.StringSerializer");
             properties.setProperty(ProducerConfig.ACKS_CONFIG, "1");
