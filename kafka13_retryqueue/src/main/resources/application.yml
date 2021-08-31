@@ -1,0 +1,48 @@
+
+
+# bootstrap.servers
+spring:
+  kafka:
+    bootstrap-servers: 192.168.1.241:9092
+    producer:
+      # key序列化器
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      # key序列化器
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    # 消费组id：group.id
+    consumer:
+      client-id: retryGroup
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserialize
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserialize
+    topics:
+      # 业务主题
+      test: tp_demo_retry_01
+      # 重试主题
+      retry: tp_demo_retry_02
+
+
+  redis:
+    # redis数据库编号
+    database: 0
+    # redis主机地址
+    host: 192.168.1.241
+    # redis端口
+    port: 6379
+    # Redis服务器连接密码（默认为空）
+    password:
+    # 连接池最大连接数（使用负值表示没有限制）
+    jedis:
+      pool:
+        max-active: 20
+        # 连接池最大阻塞等待时间（使用负值表示没有限制）
+        max-wait: -1
+        # 连接池中的最大空闲连接
+        max-idle: 10
+        # 连接池中的最小空闲连接
+        min-idle: 0
+    # 连接超时时间（毫秒）
+    timeout: 1000
+
+
+
+
