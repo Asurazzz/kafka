@@ -14,6 +14,7 @@
         <module>kafka10_consumerInterceptors</module>
         <module>kafka11_groupoffsets</module>
         <module>kafka12_tx</module>
+        <module>kafka13_retryqueue</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
